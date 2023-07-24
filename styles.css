@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightcoral;
+    /* Items to be in center and column direction */
+    display: flex;
+    align-items: center;
+     
+    /* items align one below the other  */
+    flex-direction: column; 
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+h1{
+    font-size: 50px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+#maze-container{
+    border: 5px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+}
+
+.row{
+    display: flex;
+}
+.cell{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #bab9b9; */
+    background-color: aliceblue;
+}
+
+.wall{
+    background-color: black;
+    /* border: 1px solid #060606; */
+}
+
+#rat{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#food{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+select{
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
